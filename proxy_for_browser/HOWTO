@@ -1,0 +1,22 @@
+Let's create an env
+$ python3 -m venv env
+
+activate it
+$ source env/bin/activate
+
+copy files from the gist
+$ wget https://gist.githubusercontent.com/moskrc/a6e420a22a79af70f41b9d035f884679/raw/207d135d4c6578c0e7722d44156ac1e7f1f41d05/hproxy.py
+$ wget https://gist.githubusercontent.com/moskrc/a6e420a22a79af70f41b9d035f884679/raw/207d135d4c6578c0e7722d44156ac1e7f1f41d05/requirements.txt
+install requirements
+$ pip install -r requirements.txt
+
+install certs
+$ setup_https_intercept.sh
+
+run the script
+$ python hproxy.py
+
+configure your browser to work through our proxy
+import proxy cert into your browser at http://proxy2.test/ (to intercept https connections)
+open 'https://habrahabr.ru'
+thats all

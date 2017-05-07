@@ -1,0 +1,3 @@
+-e git+https://github.com/moskrc/proxy2.git@python3#egg=proxy2
+beautifulsoup4==4.5.3
+six==1.10.0
